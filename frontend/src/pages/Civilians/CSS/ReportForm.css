@@ -1,0 +1,629 @@
+/* Report Form Styles */
+
+.form-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+  }
+  
+  .form-header {
+    padding: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .form-description {
+    margin: 0;
+    opacity: 0.9;
+  }
+  
+  /* Form Sections */
+  .report-form {
+    padding: 2rem;
+  }
+  
+  .form-section {
+    margin-bottom: 2rem;
+  }
+  
+  .form-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .section-description {
+    color: #6b7280;
+    margin: 0 0 1rem 0;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .label-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #6b7280;
+  }
+  
+  .form-input, .form-select, .form-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+    box-sizing: border-box;
+  }
+  
+  .form-input:focus, .form-select:focus, .form-textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+  }
+  
+  .character-count {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-align: right;
+    margin-top: 0.25rem;
+  }
+  
+  /* Location Section */
+  .location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .location-description {
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  .location-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.875rem;
+  }
+  
+  .location-btn:hover {
+    background-color: #059669;
+  }
+  
+  .btn-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* Location Picker */
+  .location-picker {
+    margin-top: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: white;
+  }
+  
+  .map-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .map-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #059669;
+  }
+  
+  .map-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+  }
+  
+  .map-description {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  .map-coordinates {
+    padding: 0.75rem 1rem;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .coordinate-display {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .coordinate-label {
+    color: #6b7280;
+  }
+  
+  .coordinate-value {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    color: #059669;
+    font-weight: 500;
+  }
+  
+  /* Photo Upload */
+  .photo-upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+  .photo-upload-area:hover {
+    border-color: #2563eb;
+    background-color: #f8fafc;
+  }
+  
+  .upload-placeholder {
+    position: relative;
+  }
+  
+  .file-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  .upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  
+  .upload-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #9ca3af;
+  }
+  
+  .upload-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .upload-title {
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .upload-subtitle {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .photo-preview {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .preview-image {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .remove-photo-btn {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .remove-photo-btn:hover {
+    background-color: #dc2626;
+  }
+  
+  .remove-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* Voice Recorder Styles */
+  .voice-recorder {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background: white;
+  }
+  
+  .recording-interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .recording-controls {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .record-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+    font-size: 1rem;
+  }
+  
+  .record-btn.start {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+  }
+  
+  .record-btn.start:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  }
+  
+  .record-btn.stop {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    animation: pulse-red 2s infinite;
+  }
+  
+  @keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+  }
+  
+  .record-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .recording-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .recording-status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .recording-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ef4444;
+    font-weight: 500;
+  }
+  
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ef4444;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .recording-time {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  .recording-waveform {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .waveform-bars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 40px;
+  }
+  
+  .waveform-bar {
+    width: 3px;
+    background: linear-gradient(to top, #f59e0b, #d97706);
+    border-radius: 2px;
+    animation: waveform 1s infinite ease-in-out;
+  }
+  
+  .waveform-bar:nth-child(odd) {
+    animation-delay: -0.4s;
+  }
+  
+  .waveform-bar:nth-child(even) {
+    animation-delay: -0.2s;
+  }
+  
+  @keyframes waveform {
+    0%, 40%, 100% { height: 8px; }
+    20% { height: 32px; }
+  }
+  
+  /* Playback Interface */
+  .playback-interface {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .audio-player {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    background: #f8fafc;
+  }
+  
+  .player-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .play-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .play-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  }
+  
+  .play-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2px; /* Slight adjustment for play button centering */
+  }
+  
+  .audio-info {
+    flex: 1;
+  }
+  
+  .audio-title {
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.25rem;
+  }
+  
+  .audio-duration {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .delete-btn {
+    background: #fee2e2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .delete-btn:hover {
+    background: #fecaca;
+    transform: scale(1.05);
+  }
+  
+  .delete-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .audio-waveform {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .static-waveform {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 100%;
+  }
+  
+  .static-bar {
+    width: 3px;
+    background: linear-gradient(to top, #10b981, #059669);
+    border-radius: 2px;
+    min-height: 8px;
+    opacity: 0.7;
+    animation: staticWave 3s infinite ease-in-out;
+  }
+  
+  @keyframes staticWave {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+  }
+  
+  .voice-recorder-note {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 0.5rem;
+  }
+  
+  .voice-recorder-note p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #0369a1;
+  }
+  
+  /* Submit Button */
+  .form-actions {
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-btn:hover:not(:disabled) {
+    background-color: #1d4ed8;
+  }
+  
+  .submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+    
+    .location-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .form-header,
+    .report-form {
+      padding: 1.5rem;
+    }
+    
+    .upload-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }

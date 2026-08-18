@@ -1,0 +1,7 @@
+disaster_type,default_affected_area,altitude_zone,zone_type,description
+flood,0.20,Low,Flood-prone,River flooding heavy rainfall impact
+landslide,0.15,Medium,Landslide-prone,Hill slope failure soil movement
+earthquake,0.30,Medium,Seismic,Seismic activity ground shaking
+flash_flood,0.25,Medium,Flood-prone,Sudden water surge rapid flooding
+cloudburst,0.18,High,Flood-prone,Intense rainfall localized flooding
+avalanche,0.10,High,Landslide-prone,Snow rock slide mountain hazard

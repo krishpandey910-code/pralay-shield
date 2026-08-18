@@ -1,0 +1,327 @@
+/* ===============================
+   Global Styles
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===============================
+   Header
+================================ */
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ===============================
+   Hero Section
+================================ */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?fit=crop&w=1500&q=80') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.button-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  z-index: 10;
+}
+
+.btn-primary {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #e63900;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  background: #ff4b2b;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #333;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  font-size: 2rem;
+  color: #fff;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* ===============================
+   Stats Section
+================================ */
+.s-stats-section {
+  background: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.s-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.s-stat-card {
+  background: #f1f1f1;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.s-stat-card:hover {
+  background: #e8e8e8;
+  transform: translateY(-5px);
+}
+
+.s-stat-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff4b2b;
+}
+
+.s-stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.s-stat-label {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* ===============================
+   Services Section
+================================ */
+.services-section {
+  padding: 4rem 0;
+  background: #fafafa;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #ff4b2b;
+  margin-bottom: 1rem;
+}
+
+/* ===============================
+   Newsletter Section
+================================ */
+.newsletter-section {
+  background: #ff4b2b;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.newsletter-form input {
+  padding: 0.8rem;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #000;
+}
+
+/* ===============================
+   Footer
+================================ */
+.footer {
+  background: #111;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.footer-logo i {
+  margin-right: 10px;
+  color: #ff4b2b;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: #ff4b2b;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff4b2b;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+.social-links img {
+  width: 30px;
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.follow-text {
+  margin-right: 10px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.5rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form input, .newsletter-form button { width: 100%; border-radius: 5px; margin: 5px 0; }
+}

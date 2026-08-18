@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Lora:ital,wght@0,400;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.ndma-container {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: transparent;
+}
+
+.ndma-container > p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+.subtitle {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #333;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+  .ndma-container > p {
+    font-size: 16px;
+  }
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #333;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #333;
+}
+
+.divider {
+  width: 150px;
+  height: 3px;
+  background-color: #ed0707;
+  border: none;
+  margin: 15px auto;
+}
+
+.description {
+  font-size: 18px;
+  color: #444;
+  margin: 14px auto;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.highlight {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 20px;
+}
+
+.why-disaster-section {
+  background-color: #d71920;
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.why-disaster-section .content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.why-disaster-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+.why-disaster-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .why-disaster-section h2 {
+    font-size: 28px;
+  }
+
+  .why-disaster-section p {
+    font-size: 16px;
+  }
+}

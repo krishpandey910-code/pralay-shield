@@ -1,0 +1,160 @@
+/* Success Message Styles */
+
+.success-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .success-message {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    margin: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    animation: slideInUp 0.4s ease-out;
+  }
+  
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .success-icon {
+    width: 4rem;
+    height: 4rem;
+    color: #10b981;
+    margin: 0 auto 1rem;
+    animation: checkmarkDraw 0.6s ease-out 0.2s both;
+  }
+  
+  @keyframes checkmarkDraw {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .success-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .success-text {
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  /* Success Message Variants */
+  .success-message.sos-success {
+    border: 3px solid #dc2626;
+  }
+  
+  .success-message.sos-success .success-icon {
+    color: #dc2626;
+    animation: urgentBounce 0.6s ease-out 0.2s both;
+  }
+  
+  @keyframes urgentBounce {
+    0% {
+      transform: scale(0) rotate(-180deg);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.3) rotate(10deg);
+    }
+    80% {
+      transform: scale(0.9) rotate(-5deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .success-message.sos-success .success-title {
+    color: #dc2626;
+  }
+  
+  /* Auto-dismiss progress bar */
+  .success-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+    border-radius: 0 0 1rem 1rem;
+    animation: progressBar 3s linear;
+  }
+  
+  .success-message.sos-success .success-progress {
+    background: linear-gradient(90deg, #dc2626 0%, #991b1b 100%);
+  }
+  
+  @keyframes progressBar {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .success-message {
+      margin: 0.5rem;
+      padding: 1.5rem;
+    }
+    
+    .success-icon {
+      width: 3rem;
+      height: 3rem;
+    }
+    
+    .success-title {
+      font-size: 1.125rem;
+    }
+    
+    .success-text {
+      font-size: 0.875rem;
+    }
+  }

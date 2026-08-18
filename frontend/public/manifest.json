@@ -1,0 +1,13 @@
+{
+  "name": "Disaster Emergency Response",
+  "short_name": "Emergency SOS",
+  "description": "Emergency response and disaster management app with offline SOS functionality",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["emergency", "health", "utilities"]
+}
